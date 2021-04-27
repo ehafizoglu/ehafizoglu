@@ -4,8 +4,8 @@ esphome:
   board: esp01_1m
 
 wifi:
-  ssid: "edz"
-  password: "8087Edz>%"
+  ssid: "SSIDniz"
+  password: "WifiSifreniz"
   manual_ip:
     # Set this to the IP of the ESP
       static_ip: 192.168.1.150
