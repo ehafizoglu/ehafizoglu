@@ -1,0 +1,38 @@
+esphome:
+  name: calisma_odasi_lamba
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: "edz"
+  password: "8087Edz>%"
+  manual_ip:
+    # Set this to the IP of the ESP
+      static_ip: 192.168.1.150
+    # Set this to the IP address of the router. Often ends with .1
+      gateway: 192.168.1.1
+    # The subnet of the network. 255.255.255.0 works for most home networks.
+      subnet: 255.255.255.0
+
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Calisma Odasi Lamba"
+    password: "w3b1Z4Z1rC2A"
+
+captive_portal:
+
+# Enable logging
+logger: 
+
+# Enable Home Assistant API
+api:
+  password: "1881"
+
+ota:
+  password: "1881"
+  
+switch:
+  - platform: gpio
+    name: "Çalışma Odası Lamba"
+    pin: GPIO0
