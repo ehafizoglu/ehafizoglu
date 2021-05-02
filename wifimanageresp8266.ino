@@ -26,7 +26,7 @@ void setup() {
     // res = wm.autoConnect(); // auto generated AP name from chipid
     // res = wm.autoConnect("AutoConnectAP"); // anonymous ap
     res = wm.autoConnect("ESP8266_Wifi","12345678"); // Eğer daha önce bir bağlantı yapılmamış ise ESP8266 AP modunda başlıyor. Bunun için bilgileri giriyoruz.
-  //ESP8266_EH kısmını wifi networkleri içinde görüp 123456 bilgisi ile bağlanıyor olacağız. 
+  //ESP8266_Wifi kısmını wifi networkleri içinde görüp 123456 bilgisi ile bağlanıyor olacağız. 
   //Sonrasında kendi ağımızı seçip bilgileri ESP8266 içinde kaydetmiş oluyoruz.
 
     if(!res) {
